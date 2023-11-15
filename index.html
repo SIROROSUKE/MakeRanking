@@ -9,21 +9,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <title>値のソート</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
 </head>
-<body class="mx-auto">
-<div class="container">
-    <h1 class="mb-4">値のソート</h1>
-    <form class="text-center">
-        <div class="form-group">
-            <label for="inputValues">値を入力:</label>
-            <input type="number" class="form-control" id="inputValues">
-        </div>
-        <button type="button" class="btn btn-primary" onclick="addValue()">追加</button>
-    </form>
-    
-    <h2 class="mt-4">ソートされた値:</h2>
-    <p id="sortedValues"></p>
-</div>
+<body>
+    <div class="container">
+        <h1 class="mb-4">値のソート</h1>
+        <form class="text-center">
+            <div class="form-group">
+                <label for="inputValues">値を入力:</label>
+                <input type="number" class="form-control" id="inputValues">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addValue()">追加</button>
+        </form>
+        
+        <h2 class="mt-4">ソートされた値:</h2>
+        <p id="sortedValues"></p>
+    </div>
+
     <script>
         var valuesArray = [];
 
