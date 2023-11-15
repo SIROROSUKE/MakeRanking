@@ -21,6 +21,7 @@
 
         .container {
             text-align: center;
+            padding: 20px; /* 上部を開けないように追加 */
         }
     </style>
 </head>
@@ -30,7 +31,7 @@
         <form class="text-center">
             <div class="form-group">
                 <label for="inputValues">値を入力:</label>
-                <input type="number" class="form-control" id="inputValues">
+                <input type="number" class="form-control" id="inputValues" onkeydown="if (event.key === 'Enter') addValue()">
             </div>
             <button type="button" class="btn btn-primary" onclick="addValue()">追加</button>
         </form>
